@@ -72,7 +72,8 @@ const Footer = () => {
           <p className="text-sm text-gray-400 mb-4">
             Subscribe to our newsletter to get the latest updates and offers.
           </p>
-          <form className="flex flex-col sm:flex-row items-center gap-2">
+         <div className="flex flex-col items-center  sm:flex-row">
+         <form className=" items-center gap-2">
             <input
               type="email"
               placeholder="Enter your email"
@@ -81,11 +82,12 @@ const Footer = () => {
         
             <button
               type="submit"
-              className="bg-blue-600 px-4 py-2 text-sm font-semibold text-white rounded-md hover:bg-blue-700"
+              className="bg-blue-600 px-4 py-2 mt-3 text-sm font-semibold text-white rounded-md hover:bg-blue-700"
             >
               Subscribe
             </button>
           </form>
+         </div>
         </div>
       </div>
 

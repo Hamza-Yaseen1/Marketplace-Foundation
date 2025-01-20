@@ -67,10 +67,10 @@ const Navbar: React.FC = () => {
             Categories
           </a>
           <a
-            href="#offers"
+            href="/Shop"
             className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600"
           >
-            Offers
+            Shop
           </a>
           <a
             href="#contact"

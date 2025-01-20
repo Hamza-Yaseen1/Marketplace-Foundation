@@ -8,7 +8,7 @@ interface ProductCardProps {
   priceWithoutDiscount: number;
   rating: number;
   ratingCount: number;
-  image: any; // Sanity image object
+  image: any; 
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -28,9 +28,8 @@ const ProductCard: React.FC<ProductCardProps> = ({
         src={urlFor(image).url()} // Use Sanity image URL
         alt={name}
       />
-
       {/* Product Details */}
-      <div className="p-4 flex-grow">
+      <div className="p-4 flex-grow ">
         <h2 className="text-lg font-semibold text-gray-800 truncate">
           {name}
         </h2>
@@ -44,15 +43,15 @@ const ProductCard: React.FC<ProductCardProps> = ({
           <span className="text-sm text-green-600">-{discountPercentage}%</span>
         </div>
         <div className="mt-2 flex items-center space-x-1">
-          <span className="text-yellow-500 text-sm">⭐ {rating.toFixed(1)}</span>
+          <span className="text-orange-600 text-sm">⭐ {rating.toFixed(1)}</span>
           <span className="text-sm text-gray-500">({ratingCount} reviews)</span>
         </div>
       </div>
 
       {/* Buy Now Button */}
       <div className="p-4">
-        <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-600 transition duration-300">
-          Buy Now
+        <button className=" text-black py-2 px-4 rounded-3xl items-center font-mono border border-blue-950 hover:bg-blue-950 hover:text-white transition duration-300">
+          + Add to Cart
         </button>
       </div>
     </div>
