@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import ProductCard from "./Components/ProductCard";
 import { createClient } from '@sanity/client';
+import Hero from "./Components/Hero";
 
 const sanityClient = createClient({
   projectId: 'axjzlhqu',
@@ -47,6 +48,7 @@ export default function HomePage() {
   }
 
   return (
+    <> <Hero/> 
     <div className="p-4">
           <h1 className="text-5xl p-4 mb-4 font-semibold text-gray-800 text-center">Products</h1>
           
@@ -64,5 +66,6 @@ export default function HomePage() {
         </button>
       )}
     </div>
+    </>
   );
 }
