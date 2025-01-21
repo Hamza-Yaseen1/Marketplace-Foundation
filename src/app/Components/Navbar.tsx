@@ -1,4 +1,5 @@
 "use client"
+import Link from "next/link";
 import { useState } from "react";
 
 const Navbar: React.FC = () => {
@@ -7,26 +8,26 @@ const Navbar: React.FC = () => {
   return (
     <nav className="bg-white shadow-md p-4">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
-        <a href="/">
+        <Link href="/">
         {/* Logo */}
         <div className="text-xl font-bold text-blue-600">
           Pharma<span className="text-green-500">Q</span>
         </div>
-</a>
+</Link>
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <a href="/" className="text-gray-700 hover:text-blue-600">
+          <Link href="/" className="text-gray-700 hover:text-blue-600">
             Home
-          </a>
-          <a href="#categories" className="text-gray-700 hover:text-blue-600">
+          </Link>
+          <Link href="#categories" className="text-gray-700 hover:text-blue-600">
             Categories
-          </a>
-          <a href="/Shop" className="text-gray-700 hover:text-blue-600">
+          </Link>
+          <Link href="/Shop" className="text-gray-700 hover:text-blue-600">
           Shop
-          </a>
-          <a href="#contact" className="text-gray-700 hover:text-blue-600">
+          </Link>
+          <Link href="#contact" className="text-gray-700 hover:text-blue-600">
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* Hamburger Icon */}
@@ -54,30 +55,30 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-md">
-          <a
+          <Link
             href="#home"
             className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600"
           >
             Home
-          </a>
-          <a
+          </Link>
+          <Link
             href="#categories"
             className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600"
           >
             Categories
-          </a>
-          <a
+          </Link>
+          <Link
             href="/Shop"
             className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600"
           >
             Shop
-          </a>
-          <a
+          </Link>
+          <Link
             href="#contact"
             className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600"
           >
             Contact
-          </a>
+          </Link>
         </div>
       )}
     </nav>

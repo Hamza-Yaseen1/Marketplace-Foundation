@@ -73,6 +73,15 @@ function Shop() {
     );
   }
 
+  if (!loading && products.length === 0) {
+    return (
+      <div className="flex justify-center items-center h-screen text-lg font-medium">
+        Error fetching products
+      </div>
+    );
+  }
+ 
+
   return (
     <div className="p-6">
       <h1 className="text-4xl font-extrabold text-gray-800 text-center mb-8">

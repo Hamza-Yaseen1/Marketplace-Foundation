@@ -64,7 +64,7 @@ export default function HomePage() {
       {visibleCount < products.length && ( 
         <button
           onClick={showMoreProducts}
-          className="mt-6 w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition duration-300"
+          className="mt-6 w-full  hover:text-white text-black rounded-3xl py-2 px-4 border-spacing-3 border border-blue-950 hover:bg-blue-950 transition duration-300"
         >
           Show More Products
         </button>

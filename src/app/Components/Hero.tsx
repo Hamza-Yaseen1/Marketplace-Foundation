@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+
 const Hero: React.FC = () => {
     return (
       <section className="bg-gray-100">
@@ -8,33 +11,35 @@ const Hero: React.FC = () => {
               Your Trusted <span className="text-blue-600">Pharmacy</span>, 
               Delivered to Your Doorstep
             </h1>
-            <p className="mt-4 text-gray-600 text-lg">
+            <p className="mt-4 text-black text-lg">
               Order medicines, healthcare products, and wellness essentials with fast and reliable delivery. Shop from the comfort of your home!
             </p>
             <div className="mt-6 flex justify-center md:justify-start space-x-4">
-              <a
+              <Link
                 href="/Shop"
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition"
               >
                 Shop Now
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#learn-more"
                 className="bg-gray-200 text-gray-800 px-6 py-3 rounded-lg shadow-md hover:bg-gray-300 transition"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
   
           {/* Right Content */}
-          <div className="flex-1 flex justify-center">
-            <img
-              src="/images/Deleivr.avif" // Replace with your image path
+            <div className="flex-1 flex justify-center">
+            <Image
+              src="/images/Deleivr.avif"
               alt="Pharmacy Delivery"
+              width={500} 
+              height={500} 
               className="w-full md:w-3/4 lg:w-2/3"
             />
-          </div>
+            </div>
         </div>
       </section>
     );
