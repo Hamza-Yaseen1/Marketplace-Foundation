@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { urlFor } from '@/sanity/lib/image';
 import React from 'react';
 
@@ -8,7 +9,7 @@ interface ProductCardProps {
   priceWithoutDiscount: number;
   rating: number;
   ratingCount: number;
-  image: any; 
+  image: string; 
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -22,11 +23,12 @@ const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
   return (
     <div className=" max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden h-auto flex flex-col hover:shadow-2xl hover:scale-105 transition-transform duration-300">
-      {/* Product Image */}
       <img
         className="w-full h-48 object-cover"
-        src={urlFor(image).url()} // Use Sanity image URL
+        src={urlFor(image).url()}
         alt={name}
+        width={500}
+        height={500}
       />
       {/* Product Details */}
       <div className="p-4 flex-grow ">

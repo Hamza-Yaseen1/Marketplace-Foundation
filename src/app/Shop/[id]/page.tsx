@@ -1,9 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import { createClient } from "@sanity/client";
 import { urlFor } from "@/sanity/lib/image";
+import Link from "next/link";
 
 const sanityClient = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
@@ -97,12 +99,12 @@ const Dynamic: React.FC = () => {
           <p className="text-gray-600 mb-6">
             Oops! The product you’re looking for doesn’t exist or has been removed. But don’t worry, we’ve got plenty of other amazing things for you to explore.
           </p>
-          <a
+          <Link
             className="inline-block bg-blue-600 text-white text-lg font-medium px-6 py-3 rounded-lg shadow-md hover:bg-blue-700"
             href="/Shop"
           >
             Back to Gallery
-          </a>
+          </Link>
         </div>
       </section>
     );

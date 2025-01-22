@@ -10,6 +10,16 @@ const sanityClient = createClient({
   useCdn: true,
   apiVersion: '2025-01-11',
 });
+interface ProductCardProps {
+  _id: string; 
+  name: string;
+  price: number;
+  discountPercentage: number;
+  priceWithoutDiscount: number;
+  rating: number;
+  ratingCount: number;
+  image: string; 
+}
 
 export default function HomePage() {
   const [products, setProducts] = useState([]);
@@ -54,7 +64,7 @@ export default function HomePage() {
           <h1 className="text-5xl p-4 mb-4 font-semibold text-gray-800 text-center">Products</h1>
           
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {limitedProducts.map((product: any) => (
+        {limitedProducts.map((product:ProductCardProps) => (
                     <a key={product._id} href={`/Shop/${product._id}`} >
 
           <ProductCard key={product.name} {...product} />
