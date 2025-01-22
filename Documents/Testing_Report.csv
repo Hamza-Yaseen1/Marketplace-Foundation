@@ -1,0 +1,8 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level,Assigned To,Remarks
+TC001,Validate medicine filtering,Apply high-to-low price filter > Verify results,Products sorted by price (high to low),Products sorted correctly,Passed,Medium,-,No issues found
+TC002,Test "Show More" feature,Click "Show More" > Verify additional products load,Dynamically load more products,Products loaded dynamically,Passed,Low,-,Feature works as intended
+TC003,Verify error handling for API failures,Disconnect internet > Refresh page > Verify error message,Display "Error fetching products" message,Error message displayed,Passed,Medium,-,Handled gracefully
+TC004,Check responsiveness,Test on mobile > Test on tablet > Test on desktop,Layout adjusts properly for all screen sizes,Responsive layout verified,Passed,Medium,-,Responsive on all devices
+TC005,Performance test for loading times,Open product page > Measure load times,Consistent loading times under acceptable thresholds,Loading times met the standard,Passed,High,-,Performance within limits
+TC006,User Acceptance Testing,Gather user feedback > Address issues,Positive feedback with minimal suggestions,Feedback positive with small improvements,Passed,Low,-,Successful user validation
+

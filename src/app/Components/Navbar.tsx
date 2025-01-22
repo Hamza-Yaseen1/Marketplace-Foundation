@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
           <Link href="/Shop" className="text-gray-700 hover:text-blue-600">
           Shop
           </Link>
-          <Link href="#contact" className="text-gray-700 hover:text-blue-600">
+          <Link href="/Contact" className="text-gray-700 hover:text-blue-600">
             Contact
           </Link>
         </div>
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
             Shop
           </Link>
           <Link
-            href="#contact"
+            href="/Contact"
             className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600"
           >
             Contact

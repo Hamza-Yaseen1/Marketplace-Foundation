@@ -59,7 +59,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-white">
+              <a href="/Contact" className="hover:text-white">
                 Contact Us
               </a>
             </li>

@@ -172,7 +172,7 @@ const Dynamic: React.FC = () => {
         )}
 
         <a
-          href="/Components/Contact"
+          href="/Contact"
           className="inline-block w-full px-6 py-3 text-center bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 transition duration-200"
         >
           Buy Now
