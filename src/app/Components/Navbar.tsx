@@ -19,9 +19,7 @@ const Navbar: React.FC = () => {
           <Link href="/" className="text-gray-700 hover:text-blue-600">
             Home
           </Link>
-          <Link href="#categories" className="text-gray-700 hover:text-blue-600">
-            Categories
-          </Link>
+         
           <Link href="/Shop" className="text-gray-700 hover:text-blue-600">
           Shop
           </Link>
@@ -60,12 +58,6 @@ const Navbar: React.FC = () => {
             className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600"
           >
             Home
-          </Link>
-          <Link
-            href="#categories"
-            className="block px-4 py-2 text-gray-700 hover:bg-blue-100 hover:text-blue-600"
-          >
-            Categories
           </Link>
           <Link
             href="/Shop"
